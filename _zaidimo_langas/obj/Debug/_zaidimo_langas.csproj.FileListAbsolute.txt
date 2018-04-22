@@ -1,0 +1,10 @@
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\bin\Debug\_zaidimo_langas.exe.config
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\bin\Debug\_zaidimo_langas.exe
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\bin\Debug\_zaidimo_langas.pdb
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.Form1.resources
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.Properties.Resources.resources
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.csproj.GenerateResource.cache
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.csproj.CoreCompileInputs.cache
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.exe
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.pdb
+C:\Users\v15nitro\Documents\Visual Studio 2017\Projects\_zaidimo_langas\_zaidimo_langas\obj\Debug\_zaidimo_langas.csprojResolveAssemblyReference.cache
