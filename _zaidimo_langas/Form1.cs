@@ -31,6 +31,8 @@ namespace _zaidimo_langas
       //  while (likospejimu<=10)
         public void button1_Click(object sender, EventArgs e)
         {
+           
+
             if (likospejimu==11)
             {
                 if(MessageBox.Show("GAME OVER\nAr norite pakartoti?", "Žaidimo pabaiga", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -39,13 +41,13 @@ namespace _zaidimo_langas
                     textBox1.BackColor = Color.White;
                 }
 
-              //  MessageBox.Show("Pabaiga");
+              
             }
             label2.Visible = false;
             Random sk = new Random();
 
             int randomnumber = sk.Next(1, 4);//0 ir 4 neima random skaicius nuo 1 iki 3
-                                             // randomnumber = 1;
+                                             
                                              // trikampis = 1;
                                              // apskritimas = 2;
                                              // keturkampis = 3;
@@ -147,6 +149,21 @@ namespace _zaidimo_langas
                 label2.Visible = true;
                 label2.Text = "Atspėjote!!!";
                 label2.BackColor = Color.Green;
+               var k = likospejimu;
+                using (var session = NHibernateHelper.OpenSession())
+                {
+                    using (var transaction = session.BeginTransaction())
+                    {
+                        var gamerobject = new gamers
+                        {
+                            FirstName = this.gamers_name.Text,
+                            Points = 10-this.likospejimu,
+                        };
+                        session.Save(gamerobject);
+                        transaction.Commit();
+
+                    }
+                }
 
                 if (MessageBox.Show("Žaidimas laimėtas.\nAr norite pakartoti?", "Žaidimo pabaiga", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -175,7 +192,14 @@ namespace _zaidimo_langas
                 textBox1.BackColor = Color.Orange;
                 likospejimu++;
             }
+
+
+
+
         } 
+
+
+
 
         private void label2_Click(object sender, EventArgs e)
         {
@@ -185,6 +209,18 @@ namespace _zaidimo_langas
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
        
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+           // this.Hide();
+            Form2 forma2 = new Form2();
+            forma2.ShowDialog();
+        }
+
+        private void gamers_name_TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

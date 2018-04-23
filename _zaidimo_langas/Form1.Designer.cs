@@ -44,6 +44,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.gamers_name = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -208,11 +210,32 @@
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(664, 176);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(122, 68);
+            this.button2.TabIndex = 16;
+            this.button2.Text = "Result Board";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // gamers_name
+            // 
+            this.gamers_name.Location = new System.Drawing.Point(664, 105);
+            this.gamers_name.Name = "gamers_name";
+            this.gamers_name.Size = new System.Drawing.Size(137, 22);
+            this.gamers_name.TabIndex = 17;
+            this.gamers_name.Text = "Įveskite vardą";
+            this.gamers_name.TextChanged += new System.EventHandler(this.gamers_name_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(793, 526);
+            this.ClientSize = new System.Drawing.Size(838, 526);
+            this.Controls.Add(this.gamers_name);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -257,6 +280,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox gamers_name;
     }
 }
 
