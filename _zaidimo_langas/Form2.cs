@@ -28,8 +28,8 @@ namespace _zaidimo_langas
             {
                 using (var transaction = session.BeginTransaction())
                 {
-                    var gamerobj = session.Get<gamers>(1);
-
+                    //  var gamerobj = session.Get<gamers>(1);
+                    var gamerobj = session.Query<gamers>().ToList();
                     transaction.Commit();
 
                     dataGridView1.DataSource = gamerobj;

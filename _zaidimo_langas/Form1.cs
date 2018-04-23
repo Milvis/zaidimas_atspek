@@ -44,20 +44,17 @@ namespace _zaidimo_langas
               
             }
             label2.Visible = false;
+
+
+            // trikampis = 1;
+            // apskritimas = 2;
+            // keturkampis = 3;
+
             Random sk = new Random();
 
             int randomnumber = sk.Next(1, 4);//0 ir 4 neima random skaicius nuo 1 iki 3
-                                             
-                                             // trikampis = 1;
-                                             // apskritimas = 2;
-                                             // keturkampis = 3;
+
             int atspeta = 0;
-            //int kiek = 0;
-
-
-
-
-
             if (randomnumber == 1)
             {
                 pictureBox1.Image = new Bitmap("trikampis.png");
@@ -143,7 +140,7 @@ namespace _zaidimo_langas
                 }
             }
 
-
+//tikrina ar laimeta
             if (atspeta == 3)
             {
                 label2.Visible = true;
@@ -157,7 +154,7 @@ namespace _zaidimo_langas
                         var gamerobject = new gamers
                         {
                             FirstName = this.gamers_name.Text,
-                            Points = 10-this.likospejimu,
+                            Points = 11-this.likospejimu,
                         };
                         session.Save(gamerobject);
                         transaction.Commit();
